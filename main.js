@@ -35,17 +35,10 @@ createApp({
         removeTask(index) {
             this.list.splice(index, 1);
         },
-        toggleCompletion(condition) {
-            if (!condition) {
-                condition = true;
-                console.log(condition) 
-            } else {
-                condition = false
-                console.log(condition)
-            }
+        toggleCompletion(index) {
+            this.list[index].completed = !this.list[index].completed
         },
         addTask() {
-            
             this.list.push({attività: this.newTask, completed: false})
         if (this.newTask == "") {
             this.list.pop({attività: this.newTask, completed: false})

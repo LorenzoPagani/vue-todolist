@@ -11,7 +11,7 @@
     <div id="app">
         <div id="notepad">
             <ul>
-                <li  v-for="(item, i) in list" :class="taskStatus(item.completed)">
+                <li v-for="(item, i) in list" @click="toggleCompletion(i)" :class="taskStatus(item.completed)">
                     {{item.attività}}
                     <button class="delete" @click="removeTask(i)">X</button>
                 </li>
