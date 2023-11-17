@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+.barred {
+    text-decoration: line-through;
+}
+
+#notepad {
+    background-color: rgb(255, 217, 0);
+    width: 30rem;
+    padding: 2rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
