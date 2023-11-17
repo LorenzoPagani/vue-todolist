@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }  
 
 .barred {
@@ -10,10 +10,31 @@
 }
 
 #notepad {
-    background-color: rgb(255, 217, 0);
+    background-color: rgb(39, 1, 129);
     width: 30rem;
     padding: 2rem;
     margin: 1rem auto;
     display: flex;
     justify-content: center;
+    border: 1px solid darkblue;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.delete {
+    background-color: red;
+    border: none;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 50%;
+    width: 20px;
+    aspect-ratio: 1;
+}
+.controls {
+    margin: auto;
+    width: 30rem;
+    text-align: center;
 }

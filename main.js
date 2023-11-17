@@ -25,11 +25,7 @@ createApp({
                     completed: true
                 },
             ],
-            newTask: {
-                attività: "ubriacarsi male",
-                completed: false
-            },
-            clicked: false
+            newTask: ""
         }
     },
     methods: {
@@ -49,7 +45,13 @@ createApp({
             }
         },
         addTask() {
-            this.list.push(this.newTask)
+            
+            this.list.push({attività: this.newTask, completed: false})
+        if (this.newTask == "") {
+            this.list.pop({attività: this.newTask, completed: false})
+        }
+        this.newTask = ""
+        
         }
     }
 }).mount("#app")

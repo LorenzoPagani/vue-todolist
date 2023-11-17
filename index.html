@@ -13,12 +13,14 @@
             <ul>
                 <li  v-for="(item, i) in list" :class="taskStatus(item.completed)">
                     {{item.attività}}
-                    <button @click="removeTask(i)">X</button>
+                    <button class="delete" @click="removeTask(i)">X</button>
                 </li>
             </ul>
         </div>
-        <input @keyup="addTask" type="text" v-model="newTask.attività">
-        <button @click="addTask">Aggiungi attività</button>
+        <div class="controls">
+            <input @keyup.enter="addTask" type="text" v-model="newTask">
+            <button  @click="addTask">Aggiungi attività</button>
+        </div>
 
     </div>
     <script src="main.js"></script>
